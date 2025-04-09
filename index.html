@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>🎯 Trò chơi Đoán Số</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 60%;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Hãy đoán xem!</h1>
+        <p>Hệ thống đã chọn một số ngẫu nhiên (0 hoặc 1). Hãy nhập số bạn đoán bên dưới!</p>
+
+        <input type="number" id="userInput" placeholder="Nhập số 0 hoặc 1" min="0" max="1">
+        <button onclick="guessNumber()">Đoán!</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+  <div class="back-button" onclick="window.history.back()" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); padding: 10px 20px; background-color: #FFC0CB; color: #FFC0CB; text-decoration: none; border-radius: 5px;"><a href="#">Quay Lại</a>
+    </div>
+</body>
+</html>
